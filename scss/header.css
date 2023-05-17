@@ -1,0 +1,164 @@
+.header {
+  width: 85%;
+  margin: 0 auto;
+  padding: 30px 0px;
+  max-width: 1920px;
+  margin-bottom: 50px;
+  display: flex;
+  background-color: white;
+  align-items: center;
+  justify-content: space-between;
+}
+.header .left_side,
+.header .right_side {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.header .left_side span,
+.header .right_side span {
+  transition: 0.5s ease;
+  cursor: pointer;
+}
+.header .left_side span:hover,
+.header .right_side span:hover {
+  color: rgb(68, 68, 68);
+}
+.header .right_side img {
+  cursor: pointer;
+}
+.header .right_side button {
+  all: unset;
+  font-weight: 500;
+}
+.header .right_side button:hover {
+  color: #3333CC;
+}
+.header .right_side button:active {
+  scale: 0.9;
+}
+.header a {
+  text-decoration: none;
+  color: black;
+}
+.header .left_side button {
+  all: unset;
+  background-color: #EAEAF9;
+  color: #3333CC;
+  border-radius: 10px;
+  padding: 10px 40px;
+  font-weight: 600;
+}
+.header .left_side button:hover {
+  background-color: yellow;
+  color: #3333CC;
+}
+.header .left_side button:active {
+  scale: 0.9;
+}
+.header .middle input {
+  all: unset;
+  width: 200px;
+  border-radius: 10px;
+  padding: 10px 20px;
+  color: black;
+  border: 2px solid #E2EAF1;
+  text-align: left;
+}
+.header .middle {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+  margin-left: 50px;
+  transform: translate(0px, 20px);
+  width: 100%;
+}
+.header .middle .spisok {
+  transition: all ease 500ms;
+}
+.header .middle .spisok .hide {
+  display: none;
+}
+.header .middle form {
+  display: flex;
+  align-items: center;
+  position: relative;
+  justify-content: space-between;
+  gap: 5px;
+  border: 1px solid rgba(51, 51, 51, 0.2);
+  padding: 0px 10px;
+  border-radius: 4px;
+  max-height: 35px;
+}
+.header .middle form .elastic {
+  all: unset;
+  width: 100%;
+  height: 100%;
+  color: #9AA5AF;
+  outline: none;
+  font-size: 13px;
+  font-weight: 500;
+  transform: translate(0px, 7px);
+  margin-top: 2px;
+  line-height: 16px;
+}
+.header .middle form ::-moz-placeholder {
+  color: #9AA5AF;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 16px;
+}
+.header .middle form ::placeholder {
+  color: #9AA5AF;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 16px;
+}
+.header .middle form button {
+  all: unset;
+  position: absolute;
+  transform: translate(200px, 8px);
+}
+.header .middle form img {
+  width: 15px;
+  height: 16px;
+  background-size: contain;
+}
+.header .userDiv {
+  display: flex;
+  gap: 10px;
+}
+
+.item {
+  display: flex;
+  color: black;
+  cursor: pointer;
+  background-color: white;
+  align-items: left;
+}
+
+.spisok {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  background-color: white;
+  width: 195%;
+  cursor: pointer;
+  margin-top: 30px;
+}
+
+.marked-text {
+  all: unset;
+  color: #3333CC;
+}
+
+.chislo {
+  display: flex;
+  gap: 5px;
+}
+.chislo span {
+  background-color: #3333CC;
+  color: white;
+  padding: 2px;
+}/*# sourceMappingURL=header.css.map */

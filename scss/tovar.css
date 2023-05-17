@@ -1,0 +1,237 @@
+.sim-slider {
+  width: 350px !important;
+  min-width: 0% !important;
+  height: 520px;
+  background-size: contain;
+  margin: 20px auto;
+  background-color: white;
+  max-width: 1920px;
+}
+.sim-slider img {
+  width: 100%;
+  background-size: contain;
+  margin-top: 50px;
+}
+
+/* General styles */
+.sim-slider {
+  position: relative;
+}
+
+.sim-slider-list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  position: relative;
+}
+
+.sim-slider-element {
+  width: 100%;
+  transition: opacity 1s ease-in;
+  opacity: 0;
+  position: absolute;
+  z-index: 2;
+  left: 0;
+  top: 0;
+  display: block;
+}
+
+/* Navigation item styles */
+div.sim-slider-arrow-left,
+div.sim-slider-arrow-right {
+  width: 22px;
+  height: 40px;
+  position: absolute;
+  cursor: pointer;
+  opacity: 0.6;
+  z-index: 4;
+}
+
+div.sim-slider-arrow-left {
+  left: 10px;
+  top: 45%;
+  display: block;
+  background: url("/public/icons/2203523_arrow_back_botton_left_icon.svg") no-repeat;
+}
+
+div.sim-slider-arrow-right {
+  right: 10px;
+  top: 45%;
+  background-size: contain;
+  display: block;
+  background: url("/public/icons/2203522_arrow_botton_next_right_icon.svg") no-repeat;
+}
+
+div.sim-slider-arrow-left:hover {
+  opacity: 1;
+}
+
+div.sim-slider-arrow-right:hover {
+  opacity: 1;
+}
+
+div.sim-slider-dots {
+  width: 100%;
+  height: auto;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: 2;
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+span.sim-dot {
+  width: 10px;
+  height: 10px;
+  margin: 5px 7px;
+  padding: 0;
+  display: inline-block;
+  background-color: rgba(255, 255, 255, 0.3019607843);
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.tovar-flex {
+  display: flex;
+  justify-content: space-between;
+  gap: 60px;
+  max-width: 1920px;
+  width: 85%;
+}
+.tovar-flex .sim-slider-list img {
+  position: sticky;
+  top: 0px;
+}
+.tovar-flex .prices {
+  display: flex;
+  gap: 20px;
+}
+.tovar-flex #tov-new-price {
+  color: black;
+  font-size: 26px;
+  font-weight: 600;
+  line-height: 34px;
+}
+.tovar-flex #tov-old-price {
+  margin-top: 0px;
+  color: #c4c4c4;
+  font-size: 18px;
+  font-weight: 600;
+  text-decoration: line-through;
+  line-height: 34px;
+}
+
+.right {
+  margin-top: 20px;
+  width: 100px;
+  padding: 2px 10px;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  border-radius: 2px;
+  border: 1px solid #c4c4c4;
+  text-align: center;
+}
+
+.right button, .right span {
+  background: none;
+  width: 25px;
+  height: 25px;
+  transform: translate(0px, -7px);
+}
+
+.right button, .right span {
+  padding: 0px;
+  margin: 0px;
+}
+
+.right button {
+  color: black;
+  font-size: 25px;
+  margin-top: 4px;
+  cursor: pointer;
+  border: none;
+  font-weight: 600;
+}
+
+.right span {
+  margin-top: 8px;
+  color: #000;
+  font-size: 25px;
+}
+
+.tovar-right {
+  position: relative;
+  overflow: hidden;
+}
+.tovar-right h2 {
+  font-size: 28px;
+}
+.tovar-right hr {
+  width: 100%;
+  transform: translate(-30px, 0px);
+}
+.tovar-right p {
+  line-height: 21px;
+}
+.tovar-right .btns {
+  display: flex;
+  gap: 30px;
+}
+.tovar-right .btns .add-cart {
+  all: unset;
+  background-color: #7000FF;
+  text-align: center;
+  padding: 10px 30px;
+  color: white;
+  border-radius: 5px;
+}
+.tovar-right .btns .add-fav {
+  all: unset;
+  background-color: white;
+  border: 2px solid #7000FF;
+  text-align: center;
+  padding: 10px 20px;
+  color: #7000FF;
+  border-radius: 5px;
+}
+.tovar-right .btns :hover {
+  background-color: #000;
+  color: white;
+  border: none;
+}
+.tovar-right .btns :active {
+  scale: 0.99;
+}
+
+.tovar-bottom {
+  width: 60%;
+  position: relative;
+  margin: 0 auto;
+  margin-right: 300px;
+}
+.tovar-bottom p {
+  margin-top: 10px;
+  line-height: 21px;
+}
+
+#back-to-top-btn {
+  height: 50px;
+  width: 50px;
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  z-index: 3;
+  font-size: 16px;
+  background-color: #7000FF;
+  border: none;
+  outline: none;
+  color: white;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 100%;
+  padding: 2px 0 0 2px;
+  transition: 1s;
+}/*# sourceMappingURL=tovar.css.map */

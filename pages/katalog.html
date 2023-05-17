@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="icon" type="image/svg+xml"
+    href="/public/icons/icon.png"/>
+    <link rel="stylesheet" href="/scss/header.css"/>
+    <link rel="stylesheet" href="/scss/style.css"/>
+    <link rel="stylesheet" href="/scss/footer.css"/>
+    <link rel="stylesheet" href="/scss/katalog.css"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uzum Maket - Каталог товаров</title>
+</head>
+<body>
+
+    <div id="app">
+        <div class="zagolovki">
+            <div class="left">
+            <h1 id="kategory">Электроника</h1>
+            </div>
+            <div class="right">
+                <label for="kategories">Сортировка</label>
+
+                <select name="kategories" id="kategories">
+                    <option value="popular">Популярные</option>
+                    <option value="cheaper">Подешевле</option>
+                    <option value="expensive">Подороже</option>
+                    <option value="bigRating">Высокий рейтинг</option>
+                    <option value="orders">Много заказов</option>
+                    <option value="recently">Добавлены недавно</option>
+                </select>
+            </div>
+        </div>
+        <hr>
+        <div class="main">
+            <div class="left">
+                <div class="sticky">
+                <nav class="menu">
+                    <h2>Категории</h2>
+                    <ul>
+                        <li>  Все категории</li>
+                        <li>Электроника</li> 
+                        <li><a href="https://uzum.uz/category/Aksessuary-dlya-elektroniki-10073">Аксессуары для электроники</a></li>
+                        <li><a href="https://uzum.uz/category/Igrovye-pristavki-10186">Игровые приставки</a></li>
+                        <li><a href="https://uzum.uz/category/Kvadrokoptery-i-aksessuary-10205">Квадрокоптеры и аксессуары</a></li>
+                        <li><a href="https://uzum.uz/category/Kompyuternaya-tekhnika-10074">Компьютерная техника</a></li>
+                        <li><a href="https://uzum.uz/category/Navigatory-10176">Навигаторы</a></li>
+                        <li><a href="https://uzum.uz/category/Naushniki-i-audiotekhnika-10144">Наушники и аудиотехника</a></li>
+                        <li><a href="https://uzum.uz/category/Noutbuki-planshety-i-elektronnye-10030">Ноутбуки, планшеты и <br>
+                            электронные книги</a></li>
+                        <li><a href="https://uzum.uz/category/Opticheskie-pribory-10150">Оптические приборы</a></li>
+                        <li><a href="https://uzum.uz/category/Ofisnaya-tekhnika-10086">Офисная техника</a></li>
+                        <li><a href="https://uzum.uz/category/Smartfony-i-telefony-10044">Смартфоны и телефоны</a></li>
+                        <li><a href="https://uzum.uz/category/Televizory-i-videotekhnika-10129">Телевизоры и видеотехника</a></li>
+                        <li><a href="https://uzum.uz/category/Umnye-chasy-i-fitnes-10141">Умные часы и фитнес браслеты</a></li>
+                        <li><a href="https://uzum.uz/category/Umnyj-dom-i-bezopasnost-10226">Умный дом и безопасность</a></li>
+                        <li><a href="https://uzum.uz/category/Foto--i-videotekhnika-10180">Фото- и видеотехника</a></li>
+                        <li><a href="https://uzum.uz/ru/category/Chasy-i-elektronnye-budilniki-10227">Часы и электронные будильники</a></li>
+                    </ul>
+                  </nav>
+                  <br><br>
+                  <h2>Цена</h2>
+                  <br><br>
+                  <div class="change-price">
+                    <input id="minPrice" class="change" maxlength="8" minlength="4" placeholder="от  1000" type="number">
+                    <input id="maxPrice" class="change" maxlength="8" minlength="4" placeholder="до  50000000" type="number">
+                    <br>
+                    <div class="range__container">
+                        <input class="range" id="budget" type="range" min="1000" max="50000000" value="50000000">
+                        <div class="range-number">
+                        </div>
+                      </div>
+                  </div>
+                  <br>
+                  <h2>Бренд</h2>
+                    <input type="checkbox" checked="checked"/> Latt liv<br/>
+                    <input type="checkbox"/> SSMART<br/>
+                    <input type="checkbox"/> 1MORE<br/>
+                    <input type="checkbox"/> 7saber<br/>
+                    <input type="checkbox"/> HAGIBIS<br/>
+                    <input type="checkbox"/> NOVEY<br/>
+                  <br>
+                    <span>Ещё 418</span>
+                </div>
+            </div>
+            <div class="right">
+                <div class="cards"></div>
+            </div>
+        </div>
+    </div>
+
+
+    <button id="back-to-top-btn">
+        <img src="/public/icons/chevrons-up.svg" alt="">
+    </button>
+
+    <footer></footer>
+	<div class="foot"></div>
+    
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script type="module" src="/modules/katalog.js"></script>
+    <script type="module" src="/modules/toTop.js"></script>
+    <script type="module" src="/modules/header.js"></script>
+	<script type="module" src="/main.js"></script>
+	<script type="module" src="/modules/footer.js"></script>
+</body>
+</html>

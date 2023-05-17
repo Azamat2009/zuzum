@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="icon" type="image/svg+xml"
+    href="/public/icons/icon.png"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/scss/header.css"/>
+    <link rel="stylesheet" href="/scss/style.css"/>
+    <link rel="stylesheet" href="/scss/footer.css"/>
+    <link rel="stylesheet" href="/scss/card.css"/>
+    <title>Uzum - Корзина товаров</title>
+</head>
+<body>
+    <div id="app">
+		<h1>Корзина товаров</h1>
+		<br>
+		<div class="card-flex">
+			<div class="left">
+				<!-- <div class="product-card">
+					<div class="left-card">
+						<img src="/public/img/cftak6nhj8j9g698g33g (1).png" alt="">
+					</div>
+					<div class="right-card">
+						<h3>Cтиральный порошок Tide, Color Lenor Touch, автомат, 3 кг</h3>
+						<span class="price">230 000 сум</span>
+						<div class="count"></div>
+						<button class="delete">Удалить</button>
+					</div>
+				</div> -->
+			</div>
+			<div class="right2">
+				<h1 id="total" class="total">0 сум</h1>
+				<h3 id="total-tovar" class="total-tovar">Итого товаров: 0</h3>
+				<h3 id="total-sale" class="total-tovar">Итого скидки: </h3>
+				<button id="buy">Оформить</button>
+			</div>
+		</div>
+        
+
+
+        
+        <button id="back-to-top-btn">
+			<img src="/public/icons/chevrons-up.svg" alt="">
+		</button>
+    </div>
+	<center>
+		<img class="cat" src="/public/icons/shopocat 1.png" alt="">
+		<h1 class="text-inactive">В корзине пока нет товаров</h1>
+		<p class="p-inactive">Начните с подборок на главной странице или найдите нужный товар через поиск</p>
+		<a class="a-inactive" href="/index.html">
+			<button id="home">На главную</button>
+		</a>
+	</center>
+    <footer></footer>
+	<div class="foot"></div>
+
+
+	<script type="module" src="/modules/card.js"></script>
+    <script type="module" src="/modules/toTop.js"></script>
+    <script type="module" src="/modules/header.js"></script>
+	<script type="module" src="/main.js"></script>
+	<script type="module" src="/modules/footer.js"></script>
+</body>
+</html>

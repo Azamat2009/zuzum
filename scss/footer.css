@@ -1,0 +1,59 @@
+footer {
+  width: 85%;
+  margin: 0 auto;
+  margin-top: 130px;
+  max-width: 1920px;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+}
+footer .links {
+  display: flex;
+  gap: 30px;
+  margin-bottom: 40px;
+}
+footer .contacts {
+  display: flex;
+  gap: 18px;
+  margin-bottom: 100px;
+}
+footer .aboutUs {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+footer .aboutUs h3 {
+  color: black;
+  transform: translate(-20px, 0px);
+}
+footer .aboutUs a {
+  text-decoration: none;
+  margin-top: 20px;
+  color: black;
+}
+footer .aboutUs a :hover {
+  text-decoration: underline;
+}
+
+hr {
+  width: 85%;
+  max-width: 1920px;
+  margin: 0 auto;
+}
+
+.last-block {
+  display: flex;
+  justify-content: space-between;
+  width: 85%;
+  margin: 0 auto;
+  max-width: 1920px;
+  padding: 20px 0px;
+  position: relative;
+}
+.last-block a {
+  text-decoration: none;
+  color: black;
+}
+.last-block a :hover {
+  text-decoration: underline;
+}/*# sourceMappingURL=footer.css.map */

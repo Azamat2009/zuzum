@@ -1,0 +1,368 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat";
+}
+
+#app {
+  width: 85%;
+  margin: 0 auto;
+  max-width: 1920px;
+  position: relative;
+}
+
+.container {
+  max-width: 1920px;
+  margin: 0 auto;
+}
+
+:root {
+  --blue-main: #0047FF ;
+}
+
+.center {
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 0 auto;
+  margin-top: 200px;
+  text-align: center;
+}
+
+h1 {
+  margin-bottom: 40px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 450px;
+  margin-bottom: 40px;
+}
+form input, form #currency, form select {
+  all: unset;
+  border-radius: 10px;
+  border: 1px solid black;
+  padding: 20px 25px;
+  text-align: start;
+  width: 100%;
+}
+form input::-moz-placeholder, form #currency::-moz-placeholder, form select::-moz-placeholder {
+  font-size: 18px;
+  font-weight: bold;
+  color: black;
+}
+form input::placeholder, form #currency::placeholder, form select::placeholder {
+  font-size: 18px;
+  font-weight: bold;
+  color: black;
+}
+form button {
+  all: unset;
+  padding: 20px 25px;
+  background-color: var(--blue-main);
+  color: #fff;
+  font-size: 18px;
+  font-weight: 600;
+  border-radius: 10px;
+  text-align: center;
+}
+form #currency {
+  width: 340px;
+  padding: 25px;
+}
+
+h3 {
+  padding: 10px 20px;
+  color: white;
+}
+
+#a {
+  color: #0047FF;
+}
+
+.i {
+  padding: 10px 10px;
+  width: 90%;
+  max-width: 1920px;
+  margin: 0 auto;
+  height: 400px;
+  background-color: green;
+  gap: 10px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+body .i .container {
+  display: flex;
+}
+
+.wrapper {
+  width: 70%;
+  margin: 40px auto;
+}
+.wrapper h3 {
+  margin-bottom: 20px;
+}
+.wrapper button {
+  all: unset;
+  background-color: #0047FF;
+  color: white;
+  font-size: 18px;
+  padding: 18px 100px;
+  border-radius: 14px;
+  margin-left: 20px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+.wrapper button:active {
+  scale: 0.8;
+}
+.wrapper .card-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  padding-left: 20px;
+}
+.wrapper .card-container .card-item {
+  width: 75%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-direction: column;
+  border-radius: 30px;
+  padding: 20px;
+  height: 160px;
+}
+.wrapper .card-container .card-item h2, .wrapper .card-container .card-item span {
+  color: white;
+}
+.wrapper .card-container .card-item h3 {
+  transform: translate(-20px, 0px);
+}
+
+.sim-slider {
+  width: 100%;
+  min-width: 85%;
+  margin: 20px auto;
+  background-color: white;
+}
+.sim-slider img {
+  width: 100%;
+  background-size: contain;
+}
+
+/* General styles */
+.sim-slider {
+  position: relative;
+}
+
+.sim-slider-list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  position: relative;
+}
+
+.sim-slider-element {
+  width: 100%;
+  transition: opacity 1s ease-in;
+  opacity: 0;
+  position: absolute;
+  z-index: 2;
+  left: 0;
+  top: 0;
+  display: block;
+}
+
+/* Navigation item styles */
+div.sim-slider-arrow-left,
+div.sim-slider-arrow-right {
+  width: 22px;
+  height: 40px;
+  position: absolute;
+  cursor: pointer;
+  opacity: 0.6;
+  z-index: 4;
+}
+
+div.sim-slider-arrow-left {
+  left: 10px;
+  top: 45%;
+  display: block;
+  background: url("/public/icons/2203523_arrow_back_botton_left_icon.svg") no-repeat;
+}
+
+div.sim-slider-arrow-right {
+  right: 10px;
+  top: 45%;
+  background-size: contain;
+  display: block;
+  background: url("/public/icons/2203522_arrow_botton_next_right_icon.svg") no-repeat;
+}
+
+div.sim-slider-arrow-left:hover {
+  opacity: 1;
+}
+
+div.sim-slider-arrow-right:hover {
+  opacity: 1;
+}
+
+div.sim-slider-dots {
+  width: 100%;
+  height: auto;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: 2;
+  text-align: center;
+}
+
+span.sim-dot {
+  width: 10px;
+  height: 10px;
+  margin: 5px 7px;
+  padding: 0;
+  display: inline-block;
+  background-color: rgba(255, 255, 255, 0.3019607843);
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.cards, .cards2, .cards3 {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 30px;
+}
+.cards .card, .cards2 .card, .cards3 .card {
+  display: flex;
+  cursor: pointer;
+  gap: 10px;
+  flex-direction: column;
+  width: 240px;
+  overflow: hidden;
+}
+.cards .card h3, .cards2 .card h3, .cards3 .card h3 {
+  color: #000000;
+  width: 100%;
+  font-size: 15px;
+  transform: translate(-20px, 0px);
+}
+.cards .card h3:hover, .cards2 .card h3:hover, .cards3 .card h3:hover {
+  color: rgba(19, 19, 19, 0.829);
+}
+.cards .card .bottom-card, .cards2 .card .bottom-card, .cards3 .card .bottom-card {
+  display: flex;
+  justify-content: space-between;
+  color: black;
+}
+.cards .card .before-sale, .cards2 .card .before-sale, .cards3 .card .before-sale {
+  text-decoration: line-through;
+  color: #c4c4c4;
+}
+.cards .card .heart, .cards2 .card .heart, .cards3 .card .heart {
+  position: absolute;
+  transform: translate(220px, 0px);
+}
+.cards .card .heart-none, .cards2 .card .heart-none, .cards3 .card .heart-none {
+  position: absolute;
+  display: none;
+  transform: translate(220px, 0px);
+}
+.cards .card .heart2, .cards2 .card .heart2, .cards3 .card .heart2 {
+  position: absolute;
+  transform: translate(220px, 0px);
+  display: none;
+}
+.cards .card .heart2-active, .cards2 .card .heart2-active, .cards3 .card .heart2-active {
+  position: absolute;
+  transform: translate(220px, 0px);
+  display: block;
+}
+.cards .card img, .cards2 .card img, .cards3 .card img {
+  background-size: contain;
+}
+.cards .card .productImage, .cards2 .card .productImage, .cards3 .card .productImage {
+  background-size: contain;
+  height: 200px;
+}
+.cards .card #cardImg, .cards2 .card #cardImg, .cards3 .card #cardImg {
+  transform: translate(0px, -8px);
+  width: 30px;
+  height: 30px;
+}
+.cards .card .card-img:active, .cards2 .card .card-img:active, .cards3 .card .card-img:active {
+  scale: 0.9;
+}
+
+#back-to-top-btn {
+  height: 50px;
+  width: 50px;
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  z-index: 3;
+  font-size: 16px;
+  background-color: #7000FF;
+  border: none;
+  outline: none;
+  color: white;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 100%;
+  padding: 2px 0 0 2px;
+  transition: 1s;
+}
+
+.izbranoe {
+  display: block;
+}
+
+.izbranoe-none {
+  display: none;
+}
+
+center {
+  margin-top: 100px;
+  margin-bottom: 250px;
+}
+center .hearts {
+  background-size: contain;
+  display: none;
+}
+center .hearts-active {
+  background-size: contain;
+  display: block;
+}
+center .add {
+  display: none;
+}
+center .add-active {
+  display: block;
+}
+center .text {
+  display: none;
+}
+center .text-active {
+  display: block;
+}
+center p {
+  transform: translate(0px, -30px);
+}
+center p a {
+  color: purple;
+  text-decoration: none;
+}
+center p :hover {
+  text-decoration: underline;
+}
+
+.banner {
+  margin: 90px 0px;
+  width: 100%;
+  background-size: contain;
+}/*# sourceMappingURL=style.css.map */
